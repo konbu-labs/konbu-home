@@ -19,12 +19,12 @@ export default function TopHeader() {
             <span className='hidden font-bold sm:inline-block'>konbu</span>
           </a>
         </div>
-        <div className='flex flex-1 items-center justify-between space-x-2 md:justify-end'>
-          <nav className='flex items-center'>
+        <div className='flex flex-1 items-center justify-between md:justify-end'>
+          <nav className='flex items-center space-x-2'>
             <a
               target='_blank'
               rel='noreferrer'
-              href='https://twitter.com/shadcn'
+              href='/'
             >
               <div className='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0'>
                 <svg
@@ -40,8 +40,14 @@ export default function TopHeader() {
               </div>
             </a>
 
-            <a>
-              <FaDiscord size={20} />
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='/'
+            >
+              <div className='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0'>
+                <FaDiscord size={20} />
+              </div>
             </a>
           </nav>
         </div>
